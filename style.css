@@ -1,0 +1,14 @@
+html{
+    background-image: url(images/background.jpg);
+    background-position: center;
+    cursor: url(images/happyFace.png), pointer;
+}
+
+input{
+    display: inline-grid;
+    align-items: center;
+    align-content: center;
+    position: relative;
+    margin: 10vh;
+
+}
