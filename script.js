@@ -29,7 +29,7 @@ voteGovern.onclick = function () {
     //let moveToTop = (Math.random() * (button.clientHeight - screen.height) - screen.height); //takes a random number * (the height of the button - the height of the body)
     //let moveToLeftnRight = (Math.random() * (button.width - screen.width) - screen.width); //the same but with width
     let moveToTop = (Math.random() * (screen.height - Math.random()));
-    let moveToLeftnRight = (Math.random() * (screen.width - screen.height));
+    let moveToLeftnRight = (Math.random() * (screen.width - Math.random()));
     button.style.top = moveToTop + "px";
     console.log(moveToTop + "px");
     //writes in CSS: button{margin-top: "the number that comes out of moveToTop" px}

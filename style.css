@@ -2,17 +2,26 @@ html{
     background-image: url(images/background.jpg);
     background-position: center;
     cursor: url(images/cursor.png), pointer;
+    text-align: center;
 }
 
 input{
     display: inline-grid;
-    align-items: center;
-    align-content: center;
     position: relative;
-    margin: 10vh;
+    margin: 6rem;
+    margin-left: 150px;
+    margin-right: 180px;
+    padding: 2rem;
+    font-family: fantasy;
+    font-size: 25px;
+    border-radius: 60%;
 
 }
 
-#voteGovern{
-    margin-left: 20em;
+img{
+    display: inline-grid;
+    align-content: center;
+    padding: 2rem;
+    margin: 3rem;
+    margin-left: 2rem;
 }
