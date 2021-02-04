@@ -1,7 +1,7 @@
 html{
     background-image: url(images/background.jpg);
     background-position: center;
-    cursor: url(images/happyFace.png), pointer;
+    cursor: url(images/cursor.png), pointer;
 }
 
 input{
@@ -11,4 +11,8 @@ input{
     position: relative;
     margin: 10vh;
 
+}
+
+#voteGovern{
+    margin-left: 20em;
 }

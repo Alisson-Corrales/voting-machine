@@ -5,19 +5,21 @@
     <title>Voting Machine</title>
     <meta name = "author" content = "Alisson C.">
     <!--THIS IS REQUIRED FOR GRADES DUDE. USE IT-->
-    <meta name = "description" content = "describe the page">
+    <meta name = "description" content = "fake voting page simulating the 1974 election between Nixton and McGovern">
     
     <meta property = "og:image" content = "image.png">
-    <meta property = "og:title" content = "insert title">
+    <meta property = "og:title" content = "Voting Machine">
     <meta property = "og:description" content = "insert description of linked web">
     
     <link rel = "shortcut icon" href = "favicon.png" type = "image/x-icon">
 
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <input onclick="yesPickMe" type="button" value="Vote For Nixon!">
-    <input onclick="noNoNoPickNixon" type="button" value="Vote For McGovern!">
+<body id="main">
+    <input id="voteNixon" type="button" value="Vote For Nixon!" onclick="document.location='voteNixon.html'">
+    <input id="voteGovern" type="button" value="Vote For McGovern!" onclick="document.location='voteMcGovern.html'">
+
+    <script src="script.js"></script>
 </body>
 
 </html>
