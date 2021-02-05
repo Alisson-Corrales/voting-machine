@@ -3,6 +3,7 @@ html{
     background-position: center;
     cursor: url(images/cursor.png), pointer;
     text-align: center;
+    font-family: fantasy;
 }
 
 input{
@@ -18,10 +19,18 @@ input{
 
 }
 
+/*images*/
 img{
     display: inline-grid;
     align-content: center;
-    padding: 2rem;
-    margin: 3rem;
-    margin-left: 2rem;
+    padding: 1rem;
+    margin: 10rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    cursor: url(images/pointer.png), pointer;
+}
+
+
+input{
+    cursor: url(images/cursor.png), pointer;
 }

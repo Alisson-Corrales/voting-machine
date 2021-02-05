@@ -7,16 +7,12 @@ let nixonVotes = 0;
 let mcGovernVotes = 0;
 
 //Nixon's Section
-//function yesPickMe(){
-//    document.appendChild("nixonVotes++");
-//}
-//for(let i=0; i < 1){
-//    let vote4Nixon = document.getElementById("voteNixon");
-//    voteNixon.addEventListener("click", voteNixon);
-//    main.appendChild(voteNixon);
-//}
-//
-//console.log(yesPickMe(0));
+function yesPickMe(){
+    nixonVotes++
+
+}
+
+console.log(nixonVotes);
 
 
 
@@ -24,18 +20,34 @@ let mcGovernVotes = 0;
 
 voteGovern.onclick = function () {
     let button = document.getElementById("voteGovern"); //grabs the McGovern button
-    // let bodySize = window.getBoundingClientRect(); //should get the size of the body
 
-    //let moveToTop = (Math.random() * (button.clientHeight - screen.height) - screen.height); //takes a random number * (the height of the button - the height of the body)
-    //let moveToLeftnRight = (Math.random() * (button.width - screen.width) - screen.width); //the same but with width
-    let moveToTop = (Math.random() * (screen.height - Math.random()));
-    let moveToLeftnRight = (Math.random() * (screen.width - Math.random()));
+    let moveToTop = (Math.random() * (screen.height - screen.width)); //takes a random number * (the height of the screen - the width of the screen)
+    let moveToLeftnRight = (Math.random() * (screen.width - screen.height));//same as above but with width
     button.style.top = moveToTop + "px";
     console.log(moveToTop + "px");
     //writes in CSS: button{margin-top: "the number that comes out of moveToTop" px}
     button.style.left = moveToLeftnRight + "px";
     console.log(moveToLeftnRight + "px");
     //same as above but in margin-left
-    //this part is very closely based on https://codepen.io/ardoba/pen/ZNodRK by bert bus
+
+    //prevents button from going outside the margin of the screen
+    if(moveToLeftnRight > 200){
+        moveToLeftnRight =- 100;
+    }
+    if(moveToTop > 200){
+        moveToTop =- 100;
+    }
+
+    //counts the votes so the code can do a funny
+    mcGovernVotes++;
+    console.log(mcGovernVotes);
+
+    return;
+    //the button moving part is very closely based on https://codepen.io/ardoba/pen/ZNodRK by bert bus
 }
 
+let govToon = document.getElementById("mcgovern");
+function(){
+    stuff
+}
+govToon.addEventListener("mouseenter", handler)

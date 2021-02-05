@@ -1,0 +1,7 @@
+html{
+    background-image: url(images/background.jpg);
+    background-position: center;
+    cursor: url(images/cursor.png), pointer;
+    text-align: center;
+    font-family: fantasy;
+}
