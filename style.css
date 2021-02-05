@@ -30,7 +30,13 @@ img{
     cursor: url(images/pointer.png), pointer;
 }
 
-
 input{
     cursor: url(images/cursor.png), pointer;
 }
+
+.imagesGrid{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+@media only screen and (min-width=2736px)

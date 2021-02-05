@@ -46,8 +46,8 @@ voteGovern.onclick = function () {
     //the button moving part is very closely based on https://codepen.io/ardoba/pen/ZNodRK by bert bus
 }
 
-let govToon = document.getElementById("mcgovern");
-function(){
-    stuff
-}
-govToon.addEventListener("mouseenter", handler)
+//let govToon = document.getElementById("mcgovern");
+//function(){
+//    stuff
+//}
+//govToon.addEventListener("mouseenter", handler)

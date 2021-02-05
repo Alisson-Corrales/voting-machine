@@ -16,17 +16,24 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <a href="https://en.wikipedia.org/wiki/Richard_Nixon">
-    <img src="images/nixton-toon.png" width="360" height="400" input="nixton" id="nixton">
-    </a>
-    <a href="https://en.wikipedia.org/wiki/Donkey">
-    <img src="images/mcgovern-toon.png" width="360" height="400" input="mcgovern" id="mcgovern">
-    </a>
-    
-    <input id="voteNixon" type="button" value="Vote For Nixon!" onclick="document.location='voteNixon.html'">
-    <input id="voteGovern" type="button" value="Vote For McGovern!" onclick="document.location='voteMcGovern.html'">
-    <script src="script.js"></script>
 
+    <div class="imagesGrid">
+        <div class="img1">
+            <a href="https://en.wikipedia.org/wiki/Richard_Nixon">
+            <img src="images/nixton-toon.png" width="360" height="400" input="nixton" id="nixton">
+            </a>
+        </div>
+        <div class="img2">
+        <a href="https://en.wikipedia.org/wiki/Donkey">
+        <img src="images/mcgovern-toon.png" width="360" height="400" input="mcgovern" id="mcgovern">
+        </a>
+        </div>
+    </div>
+
+        <input id="voteNixon" type="button" value="Vote For Nixon!" onclick="document.location='voteNixon.html'">
+        <input id="voteGovern" type="button" value="Vote For McGovern!" onclick="document.location='voteMcGovern.html'">
+
+    <script src="script.js"></script>
 
     <!--
         *A landing page where you can choose between the 2 candidates. 
