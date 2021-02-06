@@ -6,32 +6,38 @@ html{
     font-family: fantasy;
 }
 
+/*buttons*/
 input{
     display: inline-grid;
+    justify-self: center;
     position: relative;
-    margin: 6rem;
-    margin-left: 150px;
-    margin-right: 180px;
-    padding: 2rem;
+    padding: 1rem 1rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
     font-family: fantasy;
-    font-size: 25px;
+    font-size: 20px;
     border-radius: 60%;
-
 }
+.buttonGrid{
+    display: grid;
+    grid-template-columns: 200px 200px;
+    grid-column-gap: 100px;
+}
+
 
 /*images*/
 img{
     display: inline-grid;
+    position: relative;
     align-content: center;
     padding: 1rem;
-    margin: 10rem;
     margin-top: 1rem;
     margin-bottom: 1rem;
-    cursor: url(images/pointer.png), pointer;
+    cursor: url(images/cursor.png), pointer;
 }
 
 input{
-    cursor: url(images/cursor.png), pointer;
+    cursor: url(images/pointer.png), pointer;
 }
 
 .imagesGrid{
@@ -39,4 +45,4 @@ input{
     grid-template-columns: auto auto;
 }
 
-@media only screen and (min-width=2736px)
+/*@media only screen and (min-width=2736px)

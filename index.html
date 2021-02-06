@@ -4,7 +4,6 @@
     <meta charset = "utf-8">
     <title>Voting Machine</title>
     <meta name = "author" content = "Alisson C.">
-    <!--THIS IS REQUIRED FOR GRADES DUDE. USE IT-->
     <meta name = "description" content = "fake voting page simulating the 1974 election between Nixton and McGovern">
     
     <meta property = "og:image" content = "image.png">
@@ -19,19 +18,17 @@
 
     <div class="imagesGrid">
         <div class="img1">
-            <a href="https://en.wikipedia.org/wiki/Richard_Nixon">
-            <img src="images/nixton-toon.png" width="360" height="400" input="nixton" id="nixton">
-            </a>
+            <img src="images/nixton-toon.png" width="285" height="300" input="nixton" id="nixton">
         </div>
         <div class="img2">
-        <a href="https://en.wikipedia.org/wiki/Donkey">
-        <img src="images/mcgovern-toon.png" width="360" height="400" input="mcgovern" id="mcgovern">
-        </a>
+        <img src="images/mcgovern-toon.png" width="285" height="300" input="mcgovern" id="mcgovern">
         </div>
     </div>
 
+    <div class="buttonGrid">
         <input id="voteNixon" type="button" value="Vote For Nixon!" onclick="document.location='voteNixon.html'">
         <input id="voteGovern" type="button" value="Vote For McGovern!" onclick="document.location='voteMcGovern.html'">
+    </div>
 
     <script src="script.js"></script>
 
@@ -41,7 +38,7 @@
         A mouse move event listener
         *An onclick event listener
         A context menu event
-        A mouse over event listener and a mouse leave event listener
+        *A mouse over event listener and a mouse leave event listener
         An object that moves around the page using clientX and clientY
         Using “this” for on clicks
         A loop that will create several elements at once
