@@ -5,3 +5,8 @@ html{
     text-align: center;
     font-family: fantasy;
 }
+
+video{
+    padding: 10rem;
+    outline: none;
+}

@@ -75,12 +75,10 @@ function switchToPres(){
     picture.addEventListener("mouseleave", switchToPres);
 }
 
-//should make mscgovern's button not work flat out
+//should make mscgovern's button work normally
 function voteForNixon() {
     let button = document.getElementById("voteGovern")
-    let picture = document.getElementById("mcgovern");
-    if(mcGovernVotes < 6){
-        button.removeEventListener('onclick', voteGovern)
-        picture.removeEventListener('mouseover', switchToStonks)
+    if(mcGovernVotes <= 6){
+        document.removeEventListener('onclick', voteGovern)
     }
 }
