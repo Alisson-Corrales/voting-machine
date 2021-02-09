@@ -4,6 +4,8 @@ html{
     cursor: url(images/cursor.png), pointer;
     text-align: center;
     font-family: fantasy;
+    padding: 1rem;
+    padding-top: 10rem;
 }
 
 /*buttons*/
@@ -17,10 +19,11 @@ input{
     font-family: fantasy;
     font-size: 20px;
     border-radius: 60%;
+    outline: none;
 }
 .buttonGrid{
     display: grid;
-    grid-template-columns: 200px 200px;
+    grid-template-columns: auto auto;
     grid-column-gap: 100px;
 }
 
@@ -30,7 +33,9 @@ img{
     display: inline-grid;
     position: relative;
     align-content: center;
-    padding: 1rem;
+    /*padding: 1rem;
+    margin: 10rem;
+    */
     margin-top: 1rem;
     margin-bottom: 1rem;
     cursor: url(images/cursor.png), pointer;
@@ -42,7 +47,9 @@ input{
 
 .imagesGrid{
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: auto auto auto;
+    grid-gap: 10px;
+    justify-content: center;
 }
 
 /*@media only screen and (min-width=2736px)

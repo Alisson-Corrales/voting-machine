@@ -12,7 +12,11 @@ function yesPickMe(){
 
 }
 
-console.log(nixonVotes);
+//console.log(nixonVotes);
+
+
+
+
 
 
 
@@ -47,7 +51,7 @@ voteGovern.onclick = function () {
     //same as above but in margin-left
 
 
-    //counts the votes so the code can do a funny
+    //counts the votes so the code can potentially do a funny
     mcGovernVotes++;
     console.log(mcGovernVotes);
 
@@ -55,15 +59,13 @@ voteGovern.onclick = function () {
     //the button moving part is very closely based on https://codepen.io/ardoba/pen/ZNodRK by bert bus
 }
 
-
-//switches McGovern's img to the stonk meme
+//should switches McGovern's img to the stonk meme
 function switchToStonks(){
     let picture = document.getElementById("mcgovern");
     if(picture.src.match("images/mcGovern-toon.png")){
         picture.src = "images/stonks.png"
     }
     picture.addEventListener("mouseover", switchToStonks);
-    return
 }
 function switchToPres(){
     let picture = document.getElementById("mcgovern");
@@ -71,5 +73,14 @@ function switchToPres(){
         picture.src = "images/mcGovern-toon.png"
     }
     picture.addEventListener("mouseleave", switchToPres);
-    return
+}
+
+//should make mscgovern's button not work flat out
+function voteForNixon() {
+    let button = document.getElementById("voteGovern")
+    let picture = document.getElementById("mcgovern");
+    if(mcGovernVotes < 6){
+        button.removeEventListener('onclick', voteGovern)
+        picture.removeEventListener('mouseover', switchToStonks)
+    }
 }
